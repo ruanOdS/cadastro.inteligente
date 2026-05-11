@@ -1,106 +1,89 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
 body{
-    font-family: Arial, sans-serif;
-    background:#f4f4f4;
-    color:#333;
+  font-family:Arial, sans-serif;
+  background:#0f172a;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
 }
 
-header{
-    background:#111;
-    color:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 50px;
-    flex-wrap:wrap;
+.container{
+  background:white;
+  padding:40px;
+  border-radius:12px;
+  width:350px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.3);
 }
 
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:20px;
+h1{
+  text-align:center;
+  margin-bottom:25px;
+  color:#0f172a;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
+.form-group{
+  margin-bottom:20px;
+  display:flex;
+  flex-direction:column;
 }
 
-nav a:hover{
-    color:#00bcd4;
+label{
+  margin-bottom:5px;
+  font-weight:bold;
 }
 
-section{
-    padding:60px 20px;
-    max-width:1100px;
-    margin:auto;
+input{
+  padding:12px;
+  border:2px solid #ccc;
+  border-radius:8px;
+  transition:0.3s;
 }
 
-.sobre{
-    display:flex;
-    align-items:center;
-    gap:30px;
-    flex-wrap:wrap;
+input:focus{
+  border-color:#2563eb;
+  outline:none;
 }
 
-.sobre img{
-    border-radius:50%;
-    width:200px;
+input.erro{
+  border-color:red;
+  background:#ffe5e5;
 }
 
-.cards{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-top:30px;
+input.sucesso{
+  border-color:green;
+  background:#e7ffe7;
 }
 
-.card{
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    flex:1 1 220px;
-    box-shadow:0 4px 8px rgba(0,0,0,0.1);
-    transition:0.3s;
+small{
+  color:red;
+  margin-top:5px;
 }
 
-.card:hover{
-    transform:translateY(-5px);
+button{
+  width:100%;
+  padding:12px;
+  background:#2563eb;
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:16px;
+  transition:0.3s;
 }
 
-#contato p{
-    margin:10px 0;
+button:hover{
+  background:#1d4ed8;
 }
 
-footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:40px;
-}
-
-
-@media(max-width:768px){
-
-header{
-    flex-direction:column;
-    gap:15px;
-}
-
-.sobre{
-    flex-direction:column;
-    text-align:center;
-}
-
-nav ul{
-    flex-direction:column;
-    align-items:center;
-}
-
+#mensagemSucesso{
+  color:green;
+  text-align:center;
+  margin-top:15px;
+  font-weight:bold;
 }
